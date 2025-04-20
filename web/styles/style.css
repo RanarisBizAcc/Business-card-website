@@ -1,0 +1,36 @@
+body {
+    font-family: Inter, sans-serif;
+    color: black;
+    margin: 0;
+}
+
+nav {
+    font-size: 20px;
+    height: 164px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+nav > a {
+    height: 30px;
+}
+
+.left-side {
+    margin-right: auto;
+}
+.right-side {
+    margin-left: auto;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards-header{}
+.cards-description{}
+.card{}
+.card-img{}
+.card-header{}
+.card-description{}
+.links{}
