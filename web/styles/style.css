@@ -2,10 +2,20 @@ body {
     font-family: Inter, sans-serif;
     color: black;
     margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0 80px 0 80px;
+}
+
+main {
+    margin: 0 80px 0 80px;
 }
 
 nav {
     font-size: 20px;
+    line-height: 150%;
     height: 164px;
     display: flex;
     flex-wrap: wrap;
@@ -13,24 +23,76 @@ nav {
     justify-content: space-between;
 }
 
-nav > a {
+nav > div > a {
     height: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
 }
 
 .left-side {
     margin-right: auto;
 }
+
 .right-side {
     margin-left: auto;
 }
-.cards {
-    display: flex;
-    flex-wrap: wrap;
+
+.right-side > a {
+    margin-left: 48px;
 }
-.cards-header{}
-.cards-description{}
-.card{}
-.card-img{}
-.card-header{}
-.card-description{}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 35px;
+    margin: 60px 0 0 0;
+}
+
+.cards-header {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -2%;
+    margin: 0 0 24px 0;
+}
+
+.cards-description {
+    color: rgba(130, 130, 130, 1);
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+}
+
+.card {
+    
+}
+
+.card-img {
+    border-radius: 8px;
+}
+
+.card-header {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 24px 0 0 0;
+}
+
+.card-description {
+    color: rgba(130, 130, 130, 1);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    margin: 0;
+}
 .links{}
