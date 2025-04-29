@@ -16,6 +16,7 @@ main {
 footer {
     display: flex;
     margin: 67px 80px 0 80px;
+    padding: 30px 0 30px 0;
     border-top: 2px solid #E6E6E6;
 }
 
@@ -33,7 +34,7 @@ nav > div > a {
     height: 30px;
     text-decoration: none;
     color: black;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 a {
@@ -112,10 +113,52 @@ img {
     margin: 8px;
 }
 
+.links > a > img {
+    vertical-align: middle;
+}
+
 .map {
     display: flex;
 }
 
-.map-column > ul > li {
+.map-column {
+    margin-left: 50px;
+}
+
+.map-column > h4 {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.map-column-list {
+    font-size: 16px;
+    font-weight: 600;
+    column-count: 1;
+    column-gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.map-column-list:has(li:nth-child(5)) {
+    column-count: 2;
+    column-gap: 40px;
+} 
+
+.map-column-list > li {
+    break-inside: avoid;
+    color: #454545;
     list-style-type: none;
+    line-height: 200%;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.footer-column > p {
+    font-weight: 500;
+    font-size: 24px;
 }
