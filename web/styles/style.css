@@ -67,14 +67,14 @@ img {
     margin: 60px 0 0 0;
 }
 
-.cards-header {
+.page-header {
     font-size: 64px;
     font-weight: 700;
     letter-spacing: -2%;
     margin: 0 0 24px 0;
 }
 
-.cards-description {
+.page-description {
     color: rgba(130, 130, 130, 1);
     font-weight: 400;
     font-size: 24px;
