@@ -248,10 +248,11 @@ img {
 
 .input-group {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.input-group > input {
+.input-group > input, .input-name-group > input {
     padding: 12px 16px;
     border-radius: 8px;
     border: 1px solid #E0E0E0;
@@ -259,14 +260,26 @@ img {
     font-size: 16px;
     line-height: 150%;
     font-weight: 500;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 200px;
 }
 
-.input-name {
-    
+.input-name-group {
+    display: flex;
+    gap: 16px;
 }
 
 .input-message {
-    
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    color: #828282;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+    resize: none;
+    font-family: Inter, sans-serif;
 }
 
 .btn-mini {
@@ -276,6 +289,8 @@ img {
     color: white;
     font-size: 20px;
     padding: 16px 32px;
+    align-self: flex-start;
+    cursor: pointer;
 }
 
 .btn-large {
