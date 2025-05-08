@@ -84,6 +84,12 @@ img {
 .card {
     display: flex;
     flex-direction: column;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(105%);
 }
 
 .card-img {
@@ -282,17 +288,21 @@ img {
     font-family: Inter, sans-serif;
 }
 
-.btn-mini {
+.btn {
     border: none;
     border-radius: 8px;
     background-color: black;
     color: white;
     font-size: 20px;
     padding: 16px 32px;
-    align-self: flex-start;
     cursor: pointer;
+    transition: background-color 0.4s;
 }
 
-.btn-large {
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
+.btn-mini {
+    align-self: flex-start;
 }
