@@ -7,7 +7,6 @@
         <meta name="description" content="Мои впечатления о поездках в разные города мира.">
         <meta name="keywords" content="мнение, приключения, путешествия, мир, фотография">
         <title>Впечатления о разных городах</title>
-        <script src="/web/scripts/scripts.js"></script>
     </head>
     <body>
         <header>
@@ -27,42 +26,42 @@
                 <h2 class="page-header">Мои впечатления</h2>
                 <p class="page-description">Здесь можно почитать мои впечатления о разных местах, где я побывал</p>
                 <div class="cards">
-                    <article class="card">
+                    <article class="card" onclick="goToSelectedCity(1)">
                         <img src="/web/resources/covers/stpitersburg.png" alt="Обложка на Санкт-Петербург" class="card-img">
                         <h3 class="card-header">Санкт-Петербург</h3>
                         <p class="card-description">Большой город с интересной историей</p>
                     </article>
-                    <article class="card">
+                    <article class="card" onclick="goToSelectedCity(2)">
                         <img src="/web/resources/covers/tbilisi.png" alt="Обложка на Тбилиси" class="card-img">
                         <h3 class="card-header">Тбилиси</h3>
                         <p class="card-description">Красивое место с духом Европы</p>
                     </article>
-                    <article class="card">
+                    <article class="card" onclick="goToSelectedCity(3)">
                         <img src="/web/resources/covers/yerevan.png" alt="Обложка на Ереван" class="card-img">
                         <h3 class="card-header">Ереван</h3>
                         <p class="card-description">Неожиданно и очень приятно</p>
                     </article>
-                    <article class="card">
+                    <article class="card" onclick="goToSelectedCity(4)">
                         <img src="/web/resources/covers/kazan.png" alt="Обложка на Казань" class="card-img">
                         <h3 class="card-header">Казань</h3>
                         <p class="card-description">Колорит, независимость и красота</p>
                     </article>
-                    <article class="card">
+                    <article class="card" onclick="goToSelectedCity(5)">
                         <img src="/web/resources/covers/kas.png" alt="Обложка на Каш" class="card-img">
                         <h3 class="card-header">Каш</h3>
                         <p class="card-description">Описание Каша</p>
                     </article>
-                    <article class="card">
+                    <article class="card" onclick="goToSelectedCity(6)">
                         <img src="/web/resources/covers/nsk.png" alt="Обложка на Новосибирск" class="card-img">
                         <h3 class="card-header">Новосибирск</h3>
                         <p class="card-description">Описание Новосибирска</p>
                     </article>
-                    <article class="card">
+                    <article class="card" onclick="goToSelectedCity(7)">
                         <img src="/web/resources/covers/nvkz.png" alt="Обложка на Новокузнецк" class="card-img">
                         <h3 class="card-header">Новокузнецк</h3>
                         <p class="card-description">Описание Новокузнецка</p>
                     </article>
-                    <article class="card">
+                    <article class="card" onclick="goToSelectedCity(8)">
                         <img src="/web/resources/covers/vladivostok.png" alt="Обложка на Владивосток" class="card-img">
                         <h3 class="card-header">Владивосток</h3>
                         <p class="card-description">Описание Владивостока</p>
@@ -92,14 +91,14 @@
                 <div class="map-column">
                     <h4>Города</h4>
                     <ul class="map-column-list">
-                        <li>Санкт-Петербург</li>
-                        <li>Тбилиси</li>
-                        <li>Ереван</li>
-                        <li>Казань</li>
-                        <li>Владивосток</li>
-                        <li>Новосибирск</li>
-                        <li>Новокузнецк</li>
-                        <li>Каш</li>
+                        <li onclick="goToSelectedCity(1)">Санкт-Петербург</li>
+                        <li onclick="goToSelectedCity(2)">Тбилиси</li>
+                        <li onclick="goToSelectedCity(3)">Ереван</li>
+                        <li onclick="goToSelectedCity(4)">Казань</li>
+                        <li onclick="goToSelectedCity(8)">Владивосток</li>
+                        <li onclick="goToSelectedCity(6)">Новосибирск</li>
+                        <li onclick="goToSelectedCity(7)">Новокузнецк</li>
+                        <li onclick="goToSelectedCity(5)">Каш</li>
                     </ul>
                 </div>
                 <div class="map-column">
@@ -119,5 +118,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="/web/scripts/scripts.js"></script>
     </body>
 </html>

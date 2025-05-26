@@ -7,7 +7,6 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <title>Впечатления о разных городах</title>
-        <script src="/web/scripts/scripts.js"></script>
     </head>
     <body>
         <header>
@@ -129,14 +128,14 @@
                 <div class="map-column">
                     <h4>Города</h4>
                     <ul class="map-column-list">
-                        <li>Санкт-Петербург</li>
-                        <li>Тбилиси</li>
-                        <li>Ереван</li>
-                        <li>Казань</li>
-                        <li>Владивосток</li>
-                        <li>Новосибирск</li>
-                        <li>Новокузнецк</li>
-                        <li>Каш</li>
+                        <li onclick="goToSelectedCity(1)">Санкт-Петербург</li>
+                        <li onclick="goToSelectedCity(2)">Тбилиси</li>
+                        <li onclick="goToSelectedCity(3)">Ереван</li>
+                        <li onclick="goToSelectedCity(4)">Казань</li>
+                        <li onclick="goToSelectedCity(8)">Владивосток</li>
+                        <li onclick="goToSelectedCity(6)">Новосибирск</li>
+                        <li onclick="goToSelectedCity(7)">Новокузнецк</li>
+                        <li onclick="goToSelectedCity(5)">Каш</li>
                     </ul>
                 </div>
                 <div class="map-column">
@@ -156,5 +155,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="/web/scripts/scripts.js"></script>
     </body>
 </html>
