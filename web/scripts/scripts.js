@@ -3,10 +3,10 @@ const citiesArray = [
     {Id: 2, Name: 'tbilisi', Title:'Тбилиси', Description: 'Красивое место с духом Европы'},
     {Id: 3, Name: 'yerevan', Title:'Ереван', Description: 'Неожиданно и очень приятно'},
     {Id: 4, Name: 'kazan', Title:'Казань', Description: 'Колорит, независимость и красота'},
-    {Id: 5, Name: 'kas', Title:'Каш', Description: 'Описание Каша'},
-    {Id: 6, Name: 'nsk', Title:'Новосибирск', Description: 'Описание Новосибирска'},
-    {Id: 7, Name: 'nvkz', Title:'Новокузнецк', Description: 'Описание Новокузнецка'},
-    {Id: 8, Name: 'vladivostok', Title:'Владивосток', Description: 'Описание Владивостока'},
+    {Id: 5, Name: 'kas', Title:'Каш', Description: 'Море, горы и жара'},
+    {Id: 6, Name: 'nsk', Title:'Новосибирск', Description: 'Большой и шумный городок'},
+    {Id: 7, Name: 'nvkz', Title:'Новокузнецк', Description: 'Сочетание грязи и зелени'},
+    {Id: 8, Name: 'vladivostok', Title:'Владивосток', Description: 'Кухня и ветер'},
 ];
 const citiesTextsArray = [
     {CityId: 1, Blocks: [
