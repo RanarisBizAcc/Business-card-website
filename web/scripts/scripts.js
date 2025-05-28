@@ -145,8 +145,8 @@ function fillDocument() {
     docTitle.textContent = city.Title;
     docDescription.textContent = city.Description;
     docCover.src = '../resources/covers/' + getCoverName(city.Id);
-    docParagraphFirst.textContent = cityTextBlocks[0];
-    docParagraphSecond.textContent = cityTextBlocks[1];
+    docParagraphFirst.innerHTML  = cityTextBlocks[0];
+    docParagraphSecond.innerHTML = cityTextBlocks[1];
     docImageFirst.src = '../resources/photos/' + photos[0];
     docImageSecond.src = '../resources/photos/' + photos[1];
 
