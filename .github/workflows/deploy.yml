@@ -1,6 +1,11 @@
 name: Deploy static site to GitHub Pages
 
-# Триггер при пуше в ветку main
+# Делаем так, чтобы токен имел нужные права
+permissions:
+  contents: write      # разрешаем менять содержимое репозитория
+  pages: write         # разрешаем публиковать Pages
+  id-token: write      # нужно для некоторых flow (например OIDC)
+
 on:
   push:
     branches:
@@ -10,29 +15,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # Проверка кода
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Деплой с помощью peaceiris/actions-gh-pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          # Токен для авторизации действия
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Директория, откуда публикуем (корень репозитория)
           publish_dir: ./
-          # Ветка для публикации (по умолчанию gh-pages).
-          # Если ветки gh-pages нет, она будет автоматически создана при первом запуске.
           publish_branch: gh-pages
-          # Исключаем из публикации служебные файлы
           exclude_assets: |
             .gitignore
             .github/**
-
-# После первого деплоя ветка gh-pages появится автоматически.
-# Альтернативно можно вручную создать её командой:
-#   git checkout --orphan gh-pages
-#   git reset --hard
-#   git commit --allow-empty -m "Initial gh-pages branch"
-#   git push origin gh-pages
