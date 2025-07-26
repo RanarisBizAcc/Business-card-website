@@ -26,7 +26,7 @@ A small site with my impressions and thoughts on the cities I've been to. I used
 *Page with info about selected city (bottom)*
 <img width="1920" height="792" alt="4" src="https://github.com/user-attachments/assets/bce3074d-338e-427b-9f68-e116a8699d38" />
 
-**Описание функций сайта**
+**Description of site functions**
 - semantic layout
 - transitions between pages
 - cosmetic effects using CSS
