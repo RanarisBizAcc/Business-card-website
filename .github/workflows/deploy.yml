@@ -1,10 +1,9 @@
 name: Deploy static site to GitHub Pages
 
-# Делаем так, чтобы токен имел нужные права
 permissions:
-  contents: write      # разрешаем менять содержимое репозитория
-  pages: write         # разрешаем публиковать Pages
-  id-token: write      # нужно для некоторых flow (например OIDC)
+  contents: write
+  pages: write
+  id-token: write
 
 on:
   push:
@@ -14,16 +13,15 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./web/pages
-          publish_branch: gh-pages
-          exclude_assets: |
-            .gitignore
-            .github/**
+          path: web/pages  # <--- указываем папку с index.html
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
