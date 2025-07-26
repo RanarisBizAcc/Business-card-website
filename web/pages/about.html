@@ -1,9 +1,84 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link href="../styles/style.css" rel="stylesheet">
+        <link href="../resources/icons/favicon.png" rel="shortcut icon">
+        <meta charset="utf-8">
+        <meta name="description" content="Информация обо мне">
+        <meta name="keywords" content="обо мне, информация, автор, калинин юрий">
+        <title>Обо мне</title>
     </head>
     <body>
-        
+        <main>
+            <section class="columns-block">
+                <div class="column">
+                    <h2 class="page-header">Обо мне</h2>
+                    <p class="page-description">Кто я такой и зачем мне этот сайт?</p>
+                    <p>
+                        Привет, меня зовут Юрий! Я отучился в СибГИУ и работаю в Indas Holding Ltd.
+                        Я решил, что мне пора двигаться дальше в карьере, но для этого нужно не только выучить что-то новое, но и подтянуть базовые знания.
+                        Именно поэтому я решил сделать такой вот сайт-портфолио, где можно посмотреть мои фотки из путешествий, почитать мои мысли и заодно оценить
+                        навыки работы с HTML, CSS и JS.
+                        <br>
+                        <br>
+                        Дизайн портфолио придумал не я, это стандартный шаблон из Figma, но мне он очень понравился и я решил использовать его как основу в своем проекте.
+                        Я изменил некоторые детали, додумал поведение элементов и превратил их в этот сайт.
+                    </p>
+                </div>
+                <div class="column">
+                    <img src="../resources/photos/me.png">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="left-side footer-column">
+                <p>Портфолио ЮДК</p>
+                <aside class="links">
+                    <a href="https://github.com/RanarisBizAcc">
+                        <img src="../resources/icons/github.png">
+                    </a>
+                    <a href="https://ru.linkedin.com/in/iurii-kalinin-576ba624b">
+                        <img src="../resources/icons/linkedin.png">
+                    </a>
+                    <a href="https://t.me/ykknv">
+                        <img src="../resources/icons/telegram.png">
+                    </a>
+                    <a href="https://vk.com/ykalinin99">
+                        <img src="../resources/icons/vkontakte.png">
+                    </a>
+                </aside>
+            </div>
+            <div class="map">
+                <div class="map-column">
+                    <h4>Города</h4>
+                    <ul class="map-column-list">
+                        <li onclick="goToSelectedCity(1)">Санкт-Петербург</li>
+                        <li onclick="goToSelectedCity(2)">Тбилиси</li>
+                        <li onclick="goToSelectedCity(3)">Ереван</li>
+                        <li onclick="goToSelectedCity(4)">Казань</li>
+                        <li onclick="goToSelectedCity(8)">Владивосток</li>
+                        <li onclick="goToSelectedCity(6)">Новосибирск</li>
+                        <li onclick="goToSelectedCity(7)">Новокузнецк</li>
+                        <li onclick="goToSelectedCity(5)">Каш</li>
+                    </ul>
+                </div>
+                <div class="map-column">
+                    <h4>Контакты</h4>
+                    <ul class="map-column-list">
+                        <li>+7 (800) 555 3535</li>
+                        <li>example@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="map-column">
+                    <h4>Обо мне</h4>
+                    <ul class="map-column-list">
+                        <li>Калинин Ю. Д.</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="../scripts/scripts.js"></script>
     </body>
 </html>
