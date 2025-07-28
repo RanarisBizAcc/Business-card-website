@@ -37,7 +37,6 @@ a {
 img {
     max-width: 100%;
     height: auto;
-
 }
 
 nav > div > a {
@@ -328,4 +327,24 @@ nav > div > a:hover {
 
 .btn-mini {
     align-self: flex-start;
+}
+
+.columns-block {
+    display: flex;
+    gap: 10vw;
+    padding-bottom: 10px;
+}
+
+.column-right {
+    display: flex;
+}
+
+.column-text {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.column-img {
+    border-radius: 8px;
+    object-fit: cover;
 }
