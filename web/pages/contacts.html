@@ -9,8 +9,43 @@
         <title>Контакты</title>
     </head>
     <body>
+        <header>
+            <nav>
+                <div class="left-side">
+                    <a href="#">Портфолио ЮДК</a>
+                </div>
+                <div class="right-side">
+                    <a href="index.html">Главная</a>
+                    <a href="about.html">Обо мне</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+            </nav>
+        </header>
         <main>
-            
+            <section class="columns-block">
+                <div class="column-left">
+                    <h2 class="page-header">Обратная связь</h2>
+                    <p class="page-description">Если есть вопросы или пожелания напишите мне</p>
+                    <form>
+                        <div class="input-group">
+                            <div class="input-name-group">
+                                <label for="first-name">Имя</label>
+                                <input type="text" id="first-name" class="input-name" placeholder="Имя">
+                                <label for="last-name">Фамилия</label>
+                                <input type="text" id="last-name" class="input-name" placeholder="Фамилия">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="input-name" placeholder="email@domain.net">
+                            </div>
+                            <label for="message">Ваше сообщение</label>
+                            <textarea type="text" id="message" class="input-message" placeholder="Задайте ваш вопрос или напишите сообщение" rows="5"></textarea>
+                            <button class="btn btn-mini">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="column-right">
+                    <img src="../resources/photos/me.png" class="column-img">
+                </div>
+            </section>
         </main>
         <footer>
             <div class="left-side footer-column">

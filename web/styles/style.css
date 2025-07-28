@@ -294,6 +294,10 @@ nav > div > a:hover {
     gap: 16px;
 }
 
+.input-group > label, .input-name-group > label {
+    font-weight: 600;
+}
+
 .input-message {
     padding: 12px 16px;
     border-radius: 8px;
