@@ -355,8 +355,6 @@ nav > div > a:hover {
 .column-img {
     border-radius: 8px;
     object-fit: cover;
-    max-width: 100%;
-    height: auto;
 }
 
 .column-left {
