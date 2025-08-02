@@ -276,7 +276,14 @@ nav > div > a:hover {
     gap: 16px;
 }
 
-.input-group > input, .input-name-group > input {
+.input-name-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.input-group > input, .input-name-group > input, .input-name-group > .input-name-block > input {
     padding: 12px 16px;
     border-radius: 8px;
     border: 1px solid #E0E0E0;
@@ -292,9 +299,10 @@ nav > div > a:hover {
 .input-name-group {
     display: flex;
     gap: 16px;
+    justify-content: space-between;
 }
 
-.input-group > label, .input-name-group > label {
+.input-group > label, .input-name-group > label, .input-name-group > .input-name-block > label {
     font-weight: 600;
 }
 
@@ -335,12 +343,8 @@ nav > div > a:hover {
 
 .columns-block {
     display: flex;
-    gap: 10vw;
+    gap: 8vw;
     padding-bottom: 10px;
-}
-
-.column-right {
-    display: flex;
 }
 
 .column-text {
@@ -351,4 +355,14 @@ nav > div > a:hover {
 .column-img {
     border-radius: 8px;
     object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.column-left {
+    flex: 5;
+}
+
+.column-right {
+    flex: 4;
 }

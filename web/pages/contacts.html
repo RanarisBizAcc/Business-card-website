@@ -29,16 +29,20 @@
                     <form>
                         <div class="input-group">
                             <div class="input-name-group">
-                                <label for="first-name">Имя</label>
-                                <input type="text" id="first-name" class="input-name" placeholder="Имя">
-                                <label for="last-name">Фамилия</label>
-                                <input type="text" id="last-name" class="input-name" placeholder="Фамилия">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" class="input-name" placeholder="email@domain.net">
+                                <div class="input-name-block">
+                                    <label for="first-name">Имя</label>
+                                    <input type="text" id="first-name" class="input-name" placeholder="Имя">
+                                </div>
+                                <div class="input-name-block">
+                                    <label for="last-name">Фамилия</label>
+                                    <input type="text" id="last-name" class="input-name" placeholder="Фамилия">
+                                </div>
                             </div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="input-name" placeholder="email@domain.net">
                             <label for="message">Ваше сообщение</label>
                             <textarea type="text" id="message" class="input-message" placeholder="Задайте ваш вопрос или напишите сообщение" rows="5"></textarea>
-                            <button class="btn btn-mini">Отправить</button>
+                            <button class="btn btn-mini" type="submit">Отправить</button>
                         </div>
                     </form>
                 </div>
