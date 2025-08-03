@@ -1,13 +1,27 @@
-nav {
+body {
+    display: flex;
+    height: 100vh;
+}
 
+nav {
+    border-right: 1px solid #E0E0E0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 25px 25px 25px 10px;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    flex: 1;
 }
 
 main {
-
+    flex: 6;
+    margin: 0 25px 0 25px;
 }
 
 h1 {
-
+    font-size: 20px;
+    font-weight: 700;
 }
 
 table {
@@ -34,6 +48,16 @@ th {
 
 }
 
+.links-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.links-list > li > a > img {
+    margin: 0 16px 0 0;
+}
+
 .search-string {
 
 }
@@ -54,6 +78,16 @@ th {
 
 }
 
-#logoLink {
-    
+#title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 25px 0;
 }
+
+/* 
+F7F7F7 цвет для бэкграунда переключателя стилей и выделеной кнопки в навбаре
+E0E0E0 цвет для границ строк, границ зон страницы, гарниц ячеек (имя, фамилия, имейл) и поисковой строки
+828282 цвет текста столбца дата (заголовок столбца тоже)
+
+паддинг выбранной ссылки в навбаре по 8 сверху и снизу, по 10 по бокам. Между иконкой и текстом гэп 16
+ */
