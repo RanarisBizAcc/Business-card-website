@@ -11,11 +11,9 @@ nav {
     align-items: center;
     justify-content: flex-start;
     height: auto;
-    flex: 1;
 }
 
 main {
-    flex: 6;
     margin: 0 25px 0 25px;
 }
 
@@ -54,8 +52,24 @@ th {
     list-style-type: none;
 }
 
+.links-list > li {
+    border-radius: 8px;
+    margin-bottom: 4px;
+    padding: 8px 10px 8px 10px;
+}
+
+.links-list > li.selected {
+    background-color: #F7F7F7;
+}
+
+.links-list > li > a {
+    color: black;
+    font-weight: 500;
+    display: flex;
+}
+
 .links-list > li > a > img {
-    margin: 0 16px 0 0;
+    margin: auto 10px auto 0;
 }
 
 .search-string {
@@ -88,6 +102,4 @@ th {
 F7F7F7 цвет для бэкграунда переключателя стилей и выделеной кнопки в навбаре
 E0E0E0 цвет для границ строк, границ зон страницы, гарниц ячеек (имя, фамилия, имейл) и поисковой строки
 828282 цвет текста столбца дата (заголовок столбца тоже)
-
-паддинг выбранной ссылки в навбаре по 8 сверху и снизу, по 10 по бокам. Между иконкой и текстом гэп 16
  */
