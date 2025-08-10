@@ -43,18 +43,19 @@ td {
     border-top: 1px solid #E0E0E0;
     padding-top: 14px;
     padding-bottom: 14px;
+    font-weight: 600;
 }
 
-td.date-col {
-
+th.date-col, td.date-col {
+    color: #828282;
 }
 
-td.name-col, td.email-col {
-
-}
-
-td.message-col {
-
+td.name-col > div, td.email-col > div {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 6px 8px;
+    width: fit-content;
+    font-size: 0.8em;
 }
 
 .links-list {
@@ -81,10 +82,6 @@ td.message-col {
     gap: 10px;
 }
 
-.links-list > li > a > img {
-    
-}
-
 .tools {
     display: flex;
     justify-content: space-between;
@@ -99,6 +96,7 @@ td.message-col {
     display: flex;  
     gap: 0.7em;
     align-items: center;
+    width: 25%;
 }
 
 .search-input, .search-input:focus {
@@ -106,10 +104,6 @@ td.message-col {
     outline: none;
     padding: 0;
     color: #828282;
-}
-
-.search-icon {
-
 }
 
 .style-selector-block {
