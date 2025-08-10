@@ -126,6 +126,57 @@ td.name-col > div, td.email-col > div {
     background-color: #ffffff;
 }
 
+.visible {
+    visibility: visible;
+}
+
+.unvisible {
+    visibility: collapse;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.grid-card {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 1px rgba(128, 128, 128, 0.2);
+    gap: 10px;
+}
+
+.grid-card-date {
+    color: #828282;
+    margin: 0;
+}
+
+.grid-card-name {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.grid-card-email {
+    margin: 0;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 6px 8px;
+    width: fit-content;
+    font-size: 0.8em;
+}
+
+.grid-card-message {
+    margin: 0;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+
 #title {
     font-size: 20px;
     font-weight: 700;
